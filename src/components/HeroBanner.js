@@ -64,7 +64,7 @@ const HeroBanner = () => {
         <img
           style={{ position: "absolute", right: 0, top: 0, zIndex: -1 }}
           src={HeroBannerImg}
-          width={600}
+          width={500}
           // className="hero-banner-img"
           alt="hero banner"
         />
