@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
-import HeroBannerImg from "../assets/images/banner.png";
+import HeroBannerImg from "../assets/images/banner1.png";
 const HeroBanner = () => {
   return (
     <>
@@ -45,6 +45,12 @@ const HeroBanner = () => {
               sm: "block",
               xs: "none",
             },
+            left: 70,
+            fontSize: {
+              md: "150px",
+              sm: "100px",
+              lg: "200px",
+            },
           }}
           fontSize="200px"
         >
@@ -62,9 +68,15 @@ const HeroBanner = () => {
         }}
       >
         <img
-          style={{ position: "absolute", right: 0, top: 0, zIndex: -1 }}
+          style={{
+            position: "absolute",
+            right: 0,
+            top: 0,
+            zIndex: -1,
+            borderRadius: "0 0 0 25px",
+          }}
           src={HeroBannerImg}
-          width={500}
+          width={875}
           // className="hero-banner-img"
           alt="hero banner"
         />

@@ -18,10 +18,12 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
         height: "280px",
         cursor: "pointer",
         gap: "47px",
+        margin: "10px",
       }}
+      onClick={() => setBodyPart(item)}
     >
-      {/* <img src={Icon} alt="dumbell" width={40} /> */}
-      hello
+      <img src={Icon} alt="dumbell" width={40} />
+      <Typography textTransform="capitalize">{item}</Typography>
     </Stack>
   );
 };

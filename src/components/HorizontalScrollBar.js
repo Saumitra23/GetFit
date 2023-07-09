@@ -1,10 +1,13 @@
-import React from "react";
-import { Box } from "@mui/material";
+import React, { useContext } from "react";
+import { Box, Typography } from "@mui/material";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import BodyPart from "./BodyPart";
+import leftArrow from "../assets/icons/left-arrow.png";
+import rightArrow from "../assets/icons/right-arrow.png";
 
 const HorizontalScrollBar = ({ data, bodyPart, setBodyPart }) => {
   console.log("receivedData ===>", data);
+
   return (
     <ScrollMenu>
       {data.map((item) => (

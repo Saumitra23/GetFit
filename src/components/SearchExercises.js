@@ -45,20 +45,18 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
-      <Typography
-        fontWeight={700}
-        sx={{ fontSize: { lg: "44px", xs: "30px" } }}
-        mb="49px"
-        textAlign="center"
-      >
-        Awesome Exercises You <br /> Should Know
-      </Typography>
-      <Box position="relative" mb="72px">
+      <Box position="relative" mt="180px" mb="80px">
         <TextField
           height="76px"
           sx={{
-            input: { fontWeight: "700", border: "none", borderRadius: "4px" },
-            width: { lg: "1170px", xs: "350px" },
+            input: {
+              fontWeight: "700",
+              border: "none",
+              borderRadius: "4px",
+              fontSize: { xs: "12px", sm: "15px", lg: "20px" },
+              height: { xs: "1px", sm: "21px" },
+            },
+            width: { lg: "1170px", md: "800px", sm: "400px", xs: "250px" },
             backgroundColor: "#fff",
             borderRadius: "40px",
           }}
@@ -74,17 +72,25 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             color: "#fff",
             textTransform: "none",
             width: { lg: "173px", xs: "80px" },
-            height: "56px",
             position: "absolute",
             right: "0px",
-            fontSize: { lg: "20px", xs: "14px" },
+            fontSize: { lg: "20px", sm: "15px", xs: "12px" },
+            height: { sm: "54px" },
+            borderRadius: "0 5px 5px 0",
           }}
           onClick={handleSearch}
         >
           Search
         </Button>
       </Box>
-      <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          p: "20px",
+          boxShadow: "5px 5px 5px red",
+        }}
+      >
         <HorizontalScrollBar
           data={bodyParts}
           bodyParts
